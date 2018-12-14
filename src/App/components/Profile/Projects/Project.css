@@ -1,0 +1,198 @@
+.newProject {
+  border: 1px solid #545454;
+  padding: 0.4vh;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #545454;
+  margin-bottom: 15px;
+  margin-left: 2vw;
+  cursor: pointer;
+}
+
+.newProject .text {
+  color: #545454;
+}
+
+.name-noification .name{
+  text-transform: uppercase;
+}
+
+.project-warning {
+  margin-top: 10px;
+  color: #f0ad4e
+}
+
+.projectHeader {
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.modal_size {
+  /*visibility: hidden;*/
+  /*width: 400px;
+  height: 300px;*/
+
+  /* margin-left: 30%;
+   margin-top: 15%*/
+}
+
+.modal_size .modal-dialog {
+  width: 600px;
+}
+
+.image_src {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border: solid 1px #ccc;
+  padding: 5px;
+  position: relative;
+}
+
+.err {
+  color: red;
+}
+
+.modal_size .cropper {
+  margin: 0 15px;
+  margin-bottom: 10px;
+  border: solid 1px #ccc;
+  padding: 5px;
+  float: left;
+  width: calc(100% - 30px);
+}
+
+.file-button {
+  margin-bottom: 15px;
+}
+
+.select-file {
+  top: 3px;
+  right: 3px;
+  background-color: #cabdbd;
+  height: 25px;
+  font-size: 12px;
+  position: absolute;  
+  z-index: 100;
+  width: 25px;
+  padding: 4px 6px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.btn-addproject, .btn-addproject:hover, .btn-addproject:focus, .btn-addproject:active {
+  background: #f9c204;
+  border-radius: 20px;
+  border-color: #f9c204;
+  padding: 6px 30px;
+  outline: 0;
+}
+
+.filter-p {
+  display: inline-block;
+  line-height: 34px;
+  padding: 0 15px;
+}
+
+.form-inline .filter-p .control-label {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.filter-p .fa {
+  vertical-align: middle;
+  margin-left: 5px;
+  color: #555;
+}
+
+/*.add-button{
+ background-color: #00F7C7
+}
+.add-button:hover{
+<<<<<<< HEAD
+ background-color: #00F7C7
+}*/
+  
+.tour_modal{
+  width: 40%;
+  top : 15%;
+  left: 30%;   
+}
+
+.skipTour{
+  margin-right: 200px
+}
+
+.error-msg {
+  margin: 10px;
+  color: red;
+}
+
+.__floater {
+  z-index:1060 !important;
+  position: fixed !important;
+  width: 100%;
+  top: unset !important;
+  bottom: 0;
+  left: 0;
+  transform: none !important;
+  padding: 0 0 0 0 !important;
+}
+.__floater .__floater__body > div{
+  width: 100% !important;
+  border-radius: 0 !important;
+}
+.__floater__arrow{
+  display: none;
+}
+.tour_modal .modal-content{
+  border: 2px solid #28F8C7; 
+}
+.tour_modal .modal-body{
+  text-align: center;
+}
+.tour_modal .modal-body img{
+  margin: 50px 0;
+}
+.tour_modal .modal-body .title{
+  margin: 0 0 20px 0;
+  font-size: 30px;
+  color: #555;
+}
+.tour_modal .modal-body p.subtitle{
+  font-size: 20px;
+  color: #888;
+  margin: 0 !important;
+}
+.tour_modal .modal-footer{
+  text-align: center;
+  border: none;
+  margin-bottom: 50px;
+}
+.tour_modal .modal-footer .skiptour{
+  display: block;
+  background-color: transparent;
+  background: transparent;
+  color: #444;
+  margin: 10px 0 0;
+}
+.__floater__body .tour-title{
+  font-size: 20px;
+}
+.add-project-container{  
+  display: flex;  
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.add-project-container .project-image,
+.add-project-container .project-detail{
+  margin: 0 10px;
+}
+.add-project-container .project-image{
+  width: 100px;
+  position: relative;
+}
+.add-project-container .project-detail{
+  flex: 1;
+}

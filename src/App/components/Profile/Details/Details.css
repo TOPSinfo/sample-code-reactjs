@@ -1,0 +1,40 @@
+.navDetails{
+	margin-top: 20px !important;
+}
+
+.navDetails .links{
+	background-color: white;
+}
+.details_nav p{
+	min-width: 110px;
+	text-align: center;
+	padding: 10px;
+}
+.details_nav p.active {
+    border-top: solid 5px #5281e3;
+    border-bottom: 0; 
+}
+.profile .details{
+	background-color: white;
+	padding: 15px;
+	box-shadow: 0px 0px 10px #ddd;
+	margin-top: 0;
+	display: flex;
+    flex-grow: 1;
+}
+.profile .details_nav{
+	flex: none;
+	max-width: 400px;
+	box-shadow: 0px -2px 8px 0px #ddd;
+	display: inline-block;
+	background: #fff;
+	z-index: 9;
+	position: relative;	
+}
+.doc-search .form-control{
+	height: 4.5vh;
+}
+.profile .details .projects{
+	display: flex;
+    flex-direction: column;
+}
