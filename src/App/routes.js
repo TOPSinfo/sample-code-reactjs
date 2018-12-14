@@ -11,16 +11,9 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import {
   Home,
   Profile,
-  Login,
   Nav,
-  Invites,
-  Project,
-  Registration,
   Confirmation,
-  Payment,
-  PublicProfile,
-  PublicProject,
-  ErrorBoundary
+  PublicProfile
 } from './components';
 
 class Routes extends Component {
@@ -42,76 +35,12 @@ class Routes extends Component {
             <Route exact path="/thanks" render={props => <Confirmation />} />
             <Route
               exact
-              path="/register"
-              render={props => <Registration {...childProps} />}
-            />
-            <Route
-              exact
-              path="/login"
-              render={props => <Login {...childProps} />}
-            />
-            <Route
-              exact
               path="/:userName"
               render={props =>
                 !childProps.isAuthenticated && !socket ? (
                   <PublicProfile {...childProps} />
                 ) : (
                     <Profile {...childProps} socket={socket} />
-                  )
-              }
-            />
-            <Route
-              exact
-              path="/project/:projectName"
-              render={props =>
-                !childProps.isAuthenticated ? (
-                  <ErrorBoundary>
-                    <PublicProject/>
-                  </ErrorBoundary>
-                ) : (
-                    <Project
-                      auth={auth}
-                      {...props}
-                      {...childProps}
-                      socket={socket}
-                    />
-                  )
-              }
-            />
-            <Route
-              exact
-              path="/project/:projectName/registration"
-              render={props =>
-                !childProps.isAuthenticated ? (
-                  <Redirect to="/" />
-                ) : (
-                    <Project registration={true} auth={auth}
-                      {...props}
-                      {...childProps}
-                      socket={socket} />
-                  )
-              }
-            />
-            <Route
-              exact
-              path="/:username/pending_invites"
-              render={props =>
-                !childProps.isAuthenticated ? (
-                  <Redirect to="/" />
-                ) : (
-                    <Invites {...childProps} socket={socket} />
-                  )
-              }
-            />
-            <Route
-              exact
-              path="/payment"
-              render={props =>
-                !childProps.isAuthenticated ? (
-                  <Redirect to="/" />
-                ) : (
-                    <Payment {...childProps} socket={socket} />
                   )
               }
             />
