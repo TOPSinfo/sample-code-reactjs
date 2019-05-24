@@ -1,3 +1,6 @@
+.App {
+  text-align: center;
+}
 /*<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900" rel="stylesheet">*/
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900');
@@ -36,7 +39,7 @@ body{
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-image: url("./assets/pattern.png");
+  background-image: url("../assets/pattern.png");
 }
 .disable-menu-option{
 	pointer-events: none;
@@ -307,3 +310,4 @@ body{
         padding: 20px 20px 40px 20px;
     }
 }
+
