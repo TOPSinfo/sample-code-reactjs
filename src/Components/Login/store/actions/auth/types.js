@@ -1,5 +1,0 @@
-export default {
-  CHECK_AUTH: 'CHECK_AUTH',
-  GET_PROFILE: 'GET_PROFILE',
-  SET_USER_ID: 'SET_USER_ID',
-};
