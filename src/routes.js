@@ -1,25 +1,22 @@
-import React, { Component } from 'react';
-import { ConnectedRouter } from 'connected-react-router';
-import { Redirect, Route, Switch } from 'react-router-dom';
-import history from './history';
+import React, { Component } from "react";
+import { ConnectedRouter } from "connected-react-router";
+import { Redirect, Route, Switch } from "react-router-dom";
+import history from "./history";
 
-import {
-  Login,
-  Home,
-  Profile
-} from './Components';
+import { Login, Home, Profile, AboutUs } from "./Components";
 
 class Routes extends Component {
   render() {
     const { childProps } = this.props;
     return (
       <ConnectedRouter history={history}>
-        <div className="wrapper">
+        <div className='wrapper'>
           <Switch>
-            <Route exact path="/login" render={props => <Login />} />
-            <Route exact path="/home" render={props => <Home />} />
-            <Route exact path="/profile" render={props => <Profile />} />
-            <Route render={() => <Redirect to="/login" />} />
+            <Route exact path='/login' render={(props) => <Login />} />
+            <Route exact path='/home' render={(props) => <Home />} />
+            <Route exact path='/profile' render={(props) => <Profile />} />
+            <Routes exact path='/aboutUs' render={(props) => <AboutUs />} />
+            <Route render={() => <Redirect to='/login' />} />
           </Switch>
         </div>
       </ConnectedRouter>
@@ -27,5 +24,3 @@ class Routes extends Component {
   }
 }
 export default Routes;
-
-
