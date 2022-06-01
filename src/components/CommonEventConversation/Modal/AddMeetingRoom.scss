@@ -1,0 +1,656 @@
+.checkbox-fs-14 {
+  .radio-btn {
+    label {
+      font-size: 14px;
+    }
+  }
+}
+
+// Step CSS
+.modal-step {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+  .step {
+    text-align: center;
+    span {
+      width: 40px;
+      height: 40px;
+      background: #f1f5f7;
+      border-radius: 50%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: bold;
+      color: #283747;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        //width: 300%;
+        height: 3px;
+        background: #f1f5f7;
+        left: 100%;
+        top: 18px;
+      }
+    }
+    &.complete {
+      span {
+        &::before {
+          background: #0057e4;
+        }
+      }
+    }
+    &:last-child {
+      span {
+        &::before {
+          display: none;
+        }
+      }
+    }
+    &.active {
+      span {
+        background: #0057e4;
+        color: #fff;
+      }
+      p {
+        color: #0057e4;
+      }
+    }
+    p {
+      font-size: 14px;
+      margin-top: 12px;
+      color: rgba(40, 55, 71, 0.4);
+    }
+  }
+}
+
+// Step Two
+.occurrence {
+  .radio-btn {
+    width: 100%;
+    margin-top: 18px;
+    label {
+      font-size: 14px;
+    }
+  }
+}
+
+.step-span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #283747;
+  display: block;
+}
+
+.starts {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  .text-box {
+    width: 82px;
+    label {
+      display: none;
+    }
+  }
+  .radio-btn {
+    margin-right: 8px;
+    label {
+      font-size: 14px;
+    }
+  }
+  p {
+    font-size: 14px;
+    color: #283747;
+    margin: 0 8px;
+  }
+}
+
+// Automatically Adjust CSS
+.automatically-adjust {
+  margin-top: 14px;
+  .custom-checkbox {
+    padding-left: 28px;
+    label {
+      &::before {
+        flex: none;
+      }
+      &::after {
+        top: auto !important;
+      }
+    }
+  }
+}
+
+// It Currently CSS
+.currently {
+  margin-top: 18px;
+  .radio-btn {
+    margin-right: 12px;
+    label {
+      font-size: 0px;
+      padding-left: 20px;
+    }
+  }
+  .text-box {
+    label {
+      display: none;
+    }
+    input {
+      width: 40px;
+    }
+  }
+  .minutes {
+    font-size: 14px;
+    color: #283747;
+    margin-left: 12px;
+  }
+  .currently-time {
+    font-size: 14px;
+    color: #8a9fba;
+    padding-left: 32px;
+    margin-top: 10px;
+  }
+}
+
+// Lasts CSS
+.lasts {
+  display: flex;
+  align-items: center;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  input {
+    width: 100% !important;
+  }
+  .radio-btn {
+    margin-right: 12px;
+    label {
+      font-size: 0px;
+      padding-left: 20px;
+    }
+  }
+  .text-box {
+    label {
+      display: none;
+    }
+    input {
+      width: 40px;
+    }
+  }
+  p {
+    font-size: 14px;
+    color: #283747;
+    padding-left: 8px;
+  }
+}
+
+// visibility schedule CSS
+.visibility-schedule {
+  .radio-btn {
+    width: 100%;
+    margin-top: 18px;
+  }
+}
+
+// visibility navigation CSS
+.visibility-navigation {
+  .vn-flex {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    .radio-btn {
+      margin-right: 8px;
+    }
+    .text-box {
+      label {
+        display: none;
+      }
+      input {
+        width: 40px;
+      }
+    }
+    p {
+      font-size: 14px;
+      color: #283747;
+      margin-left: 8px;
+    }
+    &.and {
+      padding-left: 25px;
+      p {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+// Step modal btn
+.step-modal-btn {
+  display: flex;
+  justify-content: space-between;
+  button {
+    min-width: 92px;
+  }
+}
+
+// Step3 configuration-tab
+.configuration-tab {
+  .nav-tabs {
+    border-bottom: solid 1px #c0c0c0;
+    margin: 0 -30px;
+    margin-bottom: 26px;
+    padding: 0 18px;
+    .nav-item {
+      border: none;
+      text-decoration: none;
+      font-size: 14px;
+      color: #283747;
+      &:hover {
+        color: #0057e4;
+      }
+      &.active {
+        color: #0057e4;
+        border-bottom: 4px solid #0057e4;
+        padding-bottom: 14px;
+      }
+    }
+  }
+  .tab-content {
+    .radio-btn {
+      label {
+        font-size: 14px;
+      }
+    }
+    .ctc-label {
+      font-size: 14px;
+      color: #283747;
+      margin-bottom: 5px;
+      font-weight: 500;
+      display: block;
+    }
+    .source-check {
+      width: 100%;
+      margin-top: 18px;
+      .custom-select {
+        margin-top: 2px;
+        margin-left: 28px;
+        width: calc(100% - 28px);
+        padding: 0;
+      }
+      &.external-studio {
+        .text-box {
+          margin-top: 2px;
+          margin-left: 28px;
+          width: calc(100% - 28px);
+          margin-bottom: 10px;
+          label {
+            display: none;
+          }
+        }
+        .tops-label, .tops-select {
+          padding-left: 28px;
+          font-size: 14px;
+          color: rgba(40, 55, 71, 0.3);
+          display: flex;
+          align-items: center;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          img {
+            margin-left: 8px;
+          }
+        }
+        .tops-select {
+          display: block;
+          div:nth-child(3) {
+            width: calc(100% - 28px);
+          }
+        }
+        .endpoint-address {
+          display: flex;
+          align-items: flex-start;
+          p {
+            padding-left: 28px;
+            color: rgba(40, 55, 71, 0.3);
+            font-size: 14px;
+            line-height: normal;
+          }
+          img {
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+    .Configuration-table {
+      table {
+        thead {
+          tr {
+            th {
+              &:first-child {
+                padding-left: 12px;
+              }
+              &:last-child {
+                padding-right: 12px;
+              }
+              span {
+                img {
+                  position: relative;
+                  top: 3px;
+                }
+              }
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              vertical-align: top;
+              &:first-child {
+                padding-left: 12px;
+              }
+              &:last-child {
+                padding-right: 12px;
+              }
+              .custom-checkbox {
+                margin-bottom: 12px;
+                &:last-child {
+                  margin-bottom: 0px;
+                }
+                label {
+                  &::before {
+                    flex: none;
+                  }
+                  &::after {
+                    top: auto;
+                  }
+                }
+              }
+              .radio-btn {
+                margin-right: 0px;
+                margin-bottom: 12px;
+                &:last-child {
+                  margin-bottom: 0px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .green-room {
+      .radio-btn {
+        width: 100%;
+        margin-top: 18px;
+      }
+      .custom-checkbox {
+        padding-left: 28px;
+        margin-top: 14px;
+        label {
+          color: rgba(40, 55, 71, 0.3);
+          &::before {
+            flex: none;
+          }
+          &::after {
+            top: auto;
+          }
+        }
+      }
+    }
+    .room-chat {
+      .ctc-label {
+        display: flex;
+        align-items: center;
+        img {
+          margin-left: 8px;
+        }
+      }
+      .custom-checkbox {
+        margin-top: 14px;
+        label {
+          &::before {
+            flex: none;
+          }
+          &::after {
+            top: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.custom-select {
+  padding: 0;
+  &::after {
+    top: 0 !important;
+  }
+}
+
+.custom-single-select {
+  .form-component {
+    &:first-child {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+//Appearance
+.starts {
+  .react-datepicker__input-container {
+    margin-bottom: 0 !important;
+  }
+}
+
+.pickerbox {
+  border: solid 1px #e9ecef;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-size: 14px;
+  input {
+    width: 70px;
+    text-align: center;
+  }
+}
+
+//Attendees
+.room-capacity {
+  display: flex;
+  align-items: center;
+  label {
+    display: none;
+  }
+  input {
+    border-radius: 4px;
+    border: solid 1px #e9ecef;
+    width: 70px;
+    display: flex;
+    align-items: center;
+  }
+  span {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+}
+
+label.label-info {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #283747;
+  span {
+    margin-right: 9px;
+  }
+}
+
+.access-check-groups {
+  flex-direction: column;
+  display: flex;
+  border-radius: 4px;
+  border: solid 1px #e9ecef;
+  padding: 7px 7px;
+  .custom-checkbox {
+    margin: 5px 5px;
+  }
+}
+
+.radio-groupbox {
+  .radio-btn {
+    margin-bottom: 12px;
+    display: flex;
+  }
+}
+
+.subcheckbox {
+  .custom-checkbox {
+    margin-bottom: 12px;
+    padding-left: 20px;
+  }
+}
+
+.disabled-section {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+//Contents (1)
+.subsectionbox {
+  padding-left: 30px;
+}
+
+.form-component {
+  label {
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      color: #283747;
+    }
+  }
+}
+
+//Configure This Networking Area
+.limittobox {
+  display: flex;
+  align-items: center;
+  .form-component {
+    margin-right: 0.25rem;
+    input {
+      width: 68px;
+      margin: 0 10px;
+      font-size: 14px;
+      padding-right: 10px;
+    }
+  }
+  span {
+    font-size: 14px;
+  }
+}
+
+.meetingsubsection {
+  display: flex;
+  align-items: center;
+  // padding-left: 40px;
+  p {
+    font-size: 14px;
+  }
+  input {
+    width: 68px;
+    margin: 0 10px;
+  }
+}
+
+.checkwithinfo {
+  display: flex;
+  align-items: center;
+  label {
+    margin-right: 6px;
+  }
+}
+
+.inputlabelbox {
+  font-family: Roboto;
+  font-size: 14px;
+  color: #283747;
+}
+
+//ADD GROUP
+.membercheckgroup {
+  .checkgrouprow {
+    padding: 10px 12px;
+  }
+}
+
+//Configure This Meeting Table
+.cnfgr-thumbox-row {
+  .form-component {
+    label {
+      font-size: 14px;
+      color: #283747;
+    }
+  }
+}
+
+.upload-library {
+  padding-left: 30px;
+  .custom-single-select {
+    position: relative;
+    ul {
+      width: 100%;
+    }
+  }
+}
+
+.imageslsctinrbox {
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #f2f6fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  span {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    border: solid 1px #8a9fba;
+    border-radius: 50%;
+    background: #fff;
+    color: #8a9fba;
+    padding: 1px;
+  }
+}
+
+// Responsive CSS
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .modal-step {
+    padding: 0px;
+    .step {
+      span {
+        &::before {
+          width: 250%;
+        }
+      }
+    }
+  }
+  .step-modal-btn {
+    flex-wrap: wrap;
+    button {
+      width: calc(50% - 10px);
+      margin: 5px !important;
+    }
+  }
+}

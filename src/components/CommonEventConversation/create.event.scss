@@ -1,0 +1,416 @@
+.create-event-screen {
+
+  // background: #fff;
+  // border-radius: 4px;
+  // .create-event-head {
+  //     display: flex;
+  //     justify-content: space-between;
+  //     padding: 30px;
+  //     .create-event-head-left {
+  //         display: flex;
+  //         align-items: center;
+  //         .icon-moon {
+  //             cursor: pointer;
+  //             font-size: 24px;
+  //             color: #0057e4;
+  //         }
+  //         .create-event-head-title {
+  //             display: flex;
+  //             flex-direction: column;
+  //             padding-left: 30px;
+  //         }
+  //         label {
+  //             font-size: 18px;
+  //             font-weight: bold;
+  //             color: #283747;
+  //             line-height: normal;
+  //             margin-bottom: 2px;
+  //         }
+  //         p {
+  //             font-size: 14px;
+  //             font-weight: normal;
+  //             color: #283747;
+  //         }
+  //         .create-event-head-calendar {
+  //             background: #f2f6fd;
+  //             height: 50px;
+  //             display: flex;
+  //             align-items: center;
+  //             padding: 0 28px;
+  //             margin-left: 30px;
+  //             .icon-moon {
+  //                 cursor: pointer;
+  //                 font-size: 24px;
+  //                 color: #0057e4;
+  //             }
+  //         }
+  //     }
+  //     .create-event-head-right {
+  //         button {
+  //             min-width: 80px;
+  //             height: 30px;
+  //             padding: 6px 12px;
+  //             margin: 0 8px;
+  //             font-weight: 700;
+  //         }
+  //         :last-child {
+  //             margin-right: 0px;
+  //         }
+  //     }
+  // }
+  .create-event-tabs {
+    // .nav-tabs {
+    //     border-bottom: solid 1px #c0c0c0;
+    //     padding: 0 30px;
+    //     .nav-item {
+    //         border: none;
+    //         text-decoration: none;
+    //         font-size: 14px;
+    //     }
+    //     .nav-link.active {
+    //         color: #0057e4;
+    //         border-bottom: 4px solid #0057e4;
+    //     }
+    // }
+    // .tab-content {
+    //     padding: 30px 30px 10px 30px;
+    //     .custome-filebrowse {
+    //         .container {
+    //             max-width: 100%;
+    //         }
+    //         label {
+    //             font-size: 14px;
+    //             color: #283747;
+    //             margin-bottom: 5px;
+    //         }
+    //         .dropzone {
+    //             p {
+    //                 display: flex;
+    //                 align-items: center;
+    //             }
+    //         }
+    //     }
+    //     .border-none {
+    //         border: none;
+    //         padding: 0px;
+    //     }
+    // }
+  }
+}
+
+// @media (max-width: 767px) {
+//     .create-event-screen {
+//         .create-event-head {
+//             padding: 15px 0;
+//             .create-event-head-left {
+//                 .create-event-head-calendar {
+//                     margin-left: 15px;
+//                 }
+//                 .create-event-head-title {
+//                     padding-left: 15px;
+//                 }
+//             }
+//             .create-event-head-right {
+//                 button {
+//                     margin: 0 5px;
+//                 }
+//             }
+//         }
+//         .create-event-tabs {
+//             .nav-tabs {
+//                 padding: 0px;
+//             }
+//             .nav-item {
+//                 padding-left: 10px;
+//                 padding-right: 10px;
+//             }
+//             .tab-content {
+//                 padding: 15px 0 0 0;
+//             }
+//         }
+//     }
+// }
+// Attendees CSS
+// .attendees-screen {
+//   .radio-btn {
+//     label {
+//       font-size: 14px;
+//     }
+//   }
+// }
+// .title-500 {
+//   display: block;
+//   font-size: 14px;
+//   font-weight: 500;
+// }
+// .custom-flex {
+//   display: flex;
+//   align-items: center;
+//   .custom-checkbox {
+//     flex: 1;
+//     padding-right: 10px;
+//     label:before {
+//       flex: none;
+//     }
+//     input:checked + label:after {
+//       top: auto;
+//     }
+//   }
+//   .custom-select {
+//     flex: none;
+//     width: 242px;
+//   }
+// }
+// .send-row {
+//   display: flex;
+//   align-items: center;
+//   .custom-select {
+//     width: 150px;
+//     margin-right: 8px;
+//   }
+//   span {
+//     margin-right: 8px;
+//     font-size: 14px;
+//   }
+//   .text-box {
+//     width: 40px;
+//     margin-right: 8px;
+//     label {
+//       display: none;
+//     }
+//   }
+//   .text-box input[type=number]::-webkit-inner-spin-button,
+//   .text-box input[type=number]::-webkit-outer-spin-button {
+//     -webkit-appearance: none;
+//   }
+//   img {
+//     cursor: pointer;
+//   }
+// }
+// .add-a-reminder {
+//   a {
+//     color: #0057e4;
+//     font-size: 14px;
+//     text-decoration: none;
+//     margin-top: 5px;
+//     display: inline-block;
+//   }
+// }
+// .groups-policies {
+//   display: flex;
+//   padding-right: 60px;
+//   .custom-button {
+//     margin-left: 16px;
+//   }
+// }
+// .info-icon {
+//   margin-left: 8px;
+// }
+// Attendees Responsive CSS
+@media (max-width: 767px) {
+  // .registration {
+  //   .radio-btn {
+  //     margin-bottom: 10px;
+  //     :last-child {
+  //       margin-bottom: 0px;
+  //     }
+  //   }
+  // }
+  // .send-row {
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  //   margin-top: -8px;
+  //   span {
+  //     margin-right: 0px;
+  //     margin-top: 8px;
+  //   }
+  //   .text-box {
+  //     width: 100%;
+  //     margin-right: 0px;
+  //     margin-top: 8px;
+  //   }
+  //   img {
+  //     margin-top: 8px;
+  //   }
+  //   .custom-select {
+  //     width: 100%;
+  //     margin-right: 0px;
+  //     margin-top: 8px;
+  //   }
+  // }
+  // .custom-flex {
+  //   flex-direction: column;
+  //   align-items: flex-start;
+  //   .custom-select {
+  //     width: 90% !important;
+  //     margin-top: 10px;
+  //   }
+  //   .info-icon {
+  //     position: absolute;
+  //     right: 20px;
+  //     bottom: 12px;
+  //   }
+  // }
+  // .groups-policies {
+  //   padding-right: 0px;
+  // }
+  // .newly-components {
+  //   display: flex;
+  //   .custom-checkbox {
+  //     label:before {
+  //       flex: none;
+  //     }
+  //     label:after {
+  //       top: auto;
+  //     }
+  //   }
+  // }
+}
+
+// Attendees CSS
+// @media only screen
+//   and (min-device-width: 320px)
+//   and (max-device-width: 767px)
+//   and (-webkit-min-device-pixel-ratio: 2)
+//   and (orientation: portrait) {
+//       .create-event-screen {
+//           .create-event-head {
+//               flex-direction: column;
+//               .create-event-head-right {
+//                   display: flex;
+//                   justify-content: space-between;
+//                   margin-top: 15px;
+//               }
+//           }
+//       }
+//   }
+//Event Components
+.show-level {
+  display: flex;
+  align-items: center;
+
+  label {
+    flex: none;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+
+  .custom-select {
+    padding: 0;
+    height: 40px;
+    width: 90px;
+
+    &::after {
+      top: 2px;
+    }
+  }
+}
+
+//TABLE SHORTING
+table {
+  thead {
+    .sort-icon {
+      img {
+        position: relative;
+        top: 5px;
+      }
+    }
+  }
+}
+
+//Attendees
+.send-registerbox {
+  .custom-flex {
+    flex-wrap: wrap;
+
+    .custom-timezone {
+      min-width: 190px;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+  }
+}
+
+.send-row {
+  .custom-timezone {
+    min-width: 190px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+}
+
+.post-event-row {
+  .custom-timezone {
+    min-width: 190px;
+    font-size: 14px;
+  }
+}
+
+.slctgrpbox {
+  .custom-single-select {
+    position: relative;
+
+    .form-component {
+      label {
+        display: none;
+      }
+    }
+
+    ul {
+      width: 100%;
+
+      li {
+        .custom-button {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          border-top: 1px solid #eee;
+        }
+      }
+    }
+  }
+}
+
+.saving-data-tab {
+  height: 48px;
+  padding: 14px 43px 15px 44px;
+  border-radius: 4px;
+
+  // background-color: #f2f6fd;
+  span {
+    width: 59px;
+    height: 19px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .saved {
+    color: #8a9fba;
+  }
+
+  .saving {
+    color: #0057e4;
+  }
+}
+
+.ps-container>.ps-scrollbar-x-rail,
+.ps-container>.ps-scrollbar-y-rail {
+  opacity: 0.6;
+}
+
+.common-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #283747;
+}
+
+.PreviewBtn {
+  margin-top: 20px;
+}

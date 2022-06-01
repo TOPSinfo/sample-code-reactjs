@@ -1,0 +1,157 @@
+.App {
+  text-align: left;
+  padding: 1em;
+  margin: 1em;
+  border: 2px solid #d3d3d3;
+  border-radius: 0.5em;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  margin-top: 100px;
+}
+.form {
+  padding: 1em;
+}
+.custom-lable {
+  display: flex;
+  font-weight: 600;
+}
+button {
+  justify-content: flex-end;
+}
+.App-title {
+  font-size: 1.5em;
+}
+.App-intro {
+  font-size: large;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.login-signup-screen {
+  background-color: var(--white) !important;
+  height: 100%;
+
+}
+.login-form {
+  padding: 0;
+  height: 100vh;
+}
+.login-form .logo {
+  padding: 20px;
+}
+.login-form .logo img {
+  max-width: 150px;
+}
+.login-form .login-form-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 100px;
+  height: calc(100vh - 117px);
+}
+.login-form-content h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  /* color: #283747; */
+  color: var(--dark-grey);
+}
+.login-form-content .form-group {
+  position: relative;
+}
+.custom-lable {
+  font-size: 14px;
+  font-weight: 300;
+}
+.custom-input {
+  height: 40px;
+  border: 1px solid #e9ecef !important;
+  border-radius: 2px;
+  font-size: 14px;
+  /* color: #283747; */
+  color: var(--dark-grey);
+  padding-right: 30px;
+}
+.custom-input:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid var(--tops-blue) !important;
+}
+.custom-input.error {
+  border-color: var(--red) !important;
+}
+.login-form .form-group .custom-icon {
+  position: absolute;
+  right: 10px;
+  top: 35px;
+}
+.login-form .error {
+  font-size: 12px;
+  color: var(--red);
+  display: block;
+  margin: 10px 0;
+}
+.login-form .form-group .custom-icon img {
+  width: 16px;
+}
+.login-form .form-group .custom-icon .icon-handler {
+  cursor: pointer;
+}
+.keep-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.keep-forgot label input {
+  margin-right: 10px;
+}
+.keep-forgot label {
+    font-size: 14px;
+    /* color: #283747; */
+    color: var(--dark-grey);
+    font-weight: normal;
+}
+.keep-forgot span {
+    text-decoration: none;
+    /* color: #0057e4; */
+    color : var(--tops-blue);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.login-signup-screen .button{
+    background-color: var(--tops-blue);
+    border-color: var(--tops-blue);
+    display: block;
+}
+.custom-checkboxes [type="checkbox"]:not(:checked), .custom-checkboxes [type="checkbox"]:checked {  width: 0; height: 0; position: absolute; z-index: -1; opacity: 0;}
+.custom-checkboxes [type="checkbox"] label { display: flex; align-items: center; }
+.custom-checkboxes [type="checkbox"]:not(:checked) + label, .custom-checkboxes [type="checkbox"]:checked + label { position: relative; cursor: pointer; padding-left: 28px; color: #000; font-size: 14px; font-weight: 300;}
+.custom-checkboxes [type="checkbox"]:not(:checked) + label:before, .custom-checkboxes [type="checkbox"]:checked + label:before { content: ''; position: absolute; left: 0; top: 0; width: 16px; height: 16px; border: 2px solid #0057e4; background: #fff; border-radius: 0;}
+.custom-checkboxes [type="checkbox"]:not(:checked) + label:after, .custom-checkboxes [type="checkbox"]:checked + label:after { content: '\2713\0020'; position: absolute; top: 2px; left: 3px; font-size: 12px; font-weight: 700; color: #0057e4; -webkit-transition: all .3s ease-in; -moz-transition: all .3s ease-in; transition: all .3s ease-in; transition: all .3s ease-in;}
+.custom-checkboxes [type="checkbox"]:not(:checked) + label:after { opacity: 0;}
+.custom-checkboxes [type="checkbox"]:checked + label:after { opacity: 1;}
+
+/* Responsive css */
+@media (max-width: 767px) {
+  .login-signup-screen {
+    min-height: inherit !important;
+  }
+  .login-form .login-form-content {
+    padding: 0;
+  }
+}
+.login-form .login-form-content.update-password {
+  flex: none;
+  padding-top: 45px;
+}

@@ -1,0 +1,94 @@
+@import "../../css/theme";
+.error-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $secondFontFamily;
+    color: $darkViolet;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    line-height: normal;
+}
+
+.error-page-wrapper{
+    z-index: 2;
+    position: relative;
+    top: -20px;
+}
+
+.error-page-title {
+    font-size: 100px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.error-page-title > div{
+    flex-shrink: 0;
+}
+.error-page-title > :first-child{
+    text-align: right;
+}
+
+.error-page-title > div:nth-child(2){
+    min-width: unset;
+    margin-left: 0;
+    margin-right: 0;
+}
+.error-page-title > div > img{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+    top: -11px;
+}
+
+
+.error-page-title > :last-child {
+    text-align: left;
+}
+
+
+.error-page-description{
+    font-size: 34px;
+    font-style: normal;
+    letter-spacing: 4px;
+    margin-top: 10px;
+}
+
+.error-page-redirect{
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.9;
+    letter-spacing: 0.32px;
+    margin-top: 34px;
+}
+
+a.error-page-link{
+    color: $blue-color !important;
+}
+
+.error-page-wave{
+    position: absolute;
+    height: 57%;
+    width: 42%;
+}
+
+.error-page-wave-top-right{
+    top: 0;
+    right: 0;
+}
+
+.error-page-wave-bottom-left{
+    bottom: 0;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.error-page  svg{
+    height: auto;
+    width: 100%;
+}

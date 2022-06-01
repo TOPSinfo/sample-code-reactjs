@@ -1,0 +1,19 @@
+.custom-tabular-modal {
+  .modal-dialog {
+    min-width: calc(100vw - 100px) !important;
+    max-width: calc(100vw - 100px) !important;
+    tbody {
+      tr td:first-child, thead th:first-child {
+        padding-left: 15px;
+      }
+      tr td:last-child, thead th:last-child {
+        padding-right: 15px;
+        button {
+          min-width: 20px;
+          color: #8a9fba;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

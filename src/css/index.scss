@@ -1,0 +1,143 @@
+@import "~bootstrap";
+@import "theme";
+
+.main-wrapper {
+  padding-left: 70px;
+  position: relative;
+  transition: padding 0.5s;
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100px;
+    background: var(--tops-blue);
+    position: absolute;
+    top: 100px;
+    left: 0;
+  }
+
+  &.sidebar-open {
+    padding-left: 250px;
+  }
+}
+.middle-section {
+  border-radius: 4px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 1;
+  height: calc(100vh - 135px);
+}
+
+.child-container {
+  z-index: 1;
+  position: relative;
+  margin: 0 20px;
+  width: calc(100% - 40px);
+}
+
+.page-header {
+  background: var(--white);
+}
+
+// .page-title{
+//     border-bottom: solid 1px #e9ecef;
+//     height: 50px;
+//     padding: 0 15px;
+//     display: flex;
+//     align-items: center;
+//     flex: none;
+// }
+// .page-title h2{
+//     flex: 1;
+//     font-size: 18px;
+//     font-weight: 600;
+// }
+
+.droup-list img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.droup-list {
+  color: var(--tops-blue);
+  font-size: 14px;
+  vertical-align: middle;
+  display: flex;
+}
+
+.middle-inner {
+  padding: 50px 35px;
+  flex: 1;
+  overflow: auto;
+}
+.event-stages .middle-inner {
+  padding-right: 410px;
+  padding-top: 22px;
+  overflow: inherit;
+}
+
+.event-stages {
+  min-height: 880px;
+  height: auto;
+}
+
+// .blue-btn {
+//   color: var(--white);
+//   border: 0;
+//   background: var(--tops-blue);
+//   width: 130px;
+//   line-height: 40px;
+//   border-radius: 2px;
+//   font-size: 16px;
+// }
+
+// .blue-btn:focus {
+//   outline: none;
+//   border: 0;
+// }
+
+.lightblue-btn {
+  color: #8a9fba;
+  border: 0;
+  background: #e8ecf1;
+  width: 130px;
+  line-height: 40px;
+  border-radius: 2px;
+  font-size: 16px;
+}
+
+.lightblue-btn,
+.white-btn {
+  outline: none;
+  border: 0;
+}
+
+.white-btn {
+  color: #8a9fba;
+  border: 0;
+  background: var(--white);
+  width: 130px;
+  line-height: 40px;
+  border-radius: 2px;
+  font-size: 16px;
+  border: solid 0.5px #e8ecf1;
+}
+
+.mt-150 {
+  margin-top: 150px;
+  padding-right: 410px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.from-action {
+  margin: 0 410px 30px 15px;
+}
+
+.custom-content .tab-content {
+  margin-top: 20px;
+}

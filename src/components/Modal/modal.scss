@@ -1,0 +1,13 @@
+.editorClassName {
+  height: calc(100vh - 500px) !important;
+}
+
+.ql-editor {
+  height: calc(100vh - 500px) !important;
+  strong {
+    font-weight: bolder;
+  }
+  em{
+    font-style: italic;
+  }
+}

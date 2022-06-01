@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+  <defs>
+    <linearGradient id="linear-gradient-fb" x1="1.142" y1="0.5" x2="0" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#16ecd1"/>
+      <stop offset="1" stop-color="#00c3ef"/>
+    </linearGradient>
+    <clipPath id="clip-path-fb">
+      <rect id="Rectangle_39" data-name="Rectangle 39" width="35" height="35" transform="translate(1277 964)" stroke="#707070" stroke-width="1" fill="url(#linear-gradient-fb)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_4" data-name="Mask Group 4" transform="translate(-1277 -964)" clip-path="url(#clip-path-fb)">
+    <g id="Social_Icon_Facebook" data-name="Social Icon_Facebook" transform="translate(1277 964)">
+      <g id="Group_21" data-name="Group 21">
+        <path id="Path_19" data-name="Path 19" d="M17.5,35A17.5,17.5,0,1,1,35,17.5,17.522,17.522,0,0,1,17.5,35Zm0-33.115A15.615,15.615,0,1,0,33.115,17.5,15.636,15.636,0,0,0,17.5,1.885Z" fill="url(#linear-gradient-fb)"/>
+      </g>
+      <g id="Group_22" data-name="Group 22">
+        <path id="Path_20" data-name="Path 20" d="M14.761,17.571V27.708a.274.274,0,0,0,.267.267H18.8a.274.274,0,0,0,.267-.267V17.393H21.8a.27.27,0,0,0,.267-.249l.267-3.112a.257.257,0,0,0-.267-.285H19.083v-2.17a.949.949,0,0,1,.943-.943h2.1a.274.274,0,0,0,.267-.267V7.274a.274.274,0,0,0-.267-.267H18.567A3.784,3.784,0,0,0,14.761,10.8v2.988H12.876a.274.274,0,0,0-.267.267v3.112a.274.274,0,0,0,.267.267h1.885Z" fill-rule="evenodd" fill="url(#linear-gradient-fb)"/>
+      </g>
+    </g>
+  </g>
+</svg>

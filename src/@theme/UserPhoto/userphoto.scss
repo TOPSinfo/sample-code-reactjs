@@ -1,0 +1,42 @@
+.userupload-box {
+    display: inline-flex;
+    position: relative;
+    .user-dropdownbox {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        .dropdown {
+            padding: 0;
+            .dropdown-toggle {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: #0057e4;
+                border: 2px solid #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:after {
+                    display: none;
+                }
+                &:focus {
+                    box-shadow: none !important;
+                }
+                .dropdown-item {
+                    text-decoration: none !important;
+                }
+            }
+            .dropdown-menu {
+                padding: 0;
+                width: 100px;
+                min-width: 100px;
+                a.dropdown-item {
+                    padding: 8px 15px;
+                    text-decoration: none;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
